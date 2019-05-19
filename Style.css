@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite;*/
+}
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #006064;
+    z-index: 1;
+    color: antiquewhite;
+}
+
+/*Стили кнопок и ссылок меню*/
+.menu_link, .menu{
+    display: block;
+    text-align: center;
+    vertical-align: center;
+}
+nav {
+    height: 100%;
+    width: 100%;
+}
+.menu_link {
+    transform: rotate(-90deg);
+    width: 390%;
+    position: absolute;
+    left: -150%;
+    top: 45%;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    top: 8%;
+    width: 4%;
+    height: 25%;
+    background-color: #FFAB00;
+}
+#menu2 {
+    left: 0;
+    top: 32%;
+}
+#menu3 {
+    left: 0;
+    top: 57%;
+}
+#menu4 {
+    left: 0;
+    top: 82%;
+}
+.menu:hover {
+    background-color: #006064;
+    transform: scale(1.2);
+}
+a:link {
+    color: antiquewhite;
+    font-size: large;
+}
+a:visited {
+    color: mediumvioletred;
+}
+a:active {
+    color: lawngreen;
+}
+
+/*Cтили фото*/
+#avatar {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 30%;
+    height: 20%;
+    text-align:left;
+}
+input {
+    align-self: center;
+}
+.round {
+    border-radius: 100%;
+    width: 30%;
+    margin: 10px;
+}
+
+/*Стили галереи достижений*/
+#gallery {
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    height: 15%;
+    width: 30%;
+    /* background-color: yellow;*/
+}
+.logo_gallery {
+    width: 10%;
+    display: inline-block;
+}
+#progress_bar_global {
+    position: absolute;
+    top: 10%;
+    left:63%;
+    height: 20%;
+    width: 30%;
+    /*background-color: lightgray;*/
+}
+.progress {
+    height: 10%;
+    width: 90%;
+}
+p {
+    margin: 0;
+}
+#note_global {
+    position: absolute;
+    top: 29%;
+    left:32%;
+    height: 20%;
+    width: 60%;
+    /*background-color: dimgrey;*/
+}
+
+/*Стили галереи текущих показателей*/
+#note_now {
+    position: absolute;
+    top: 72%;
+    left:32%;
+    height: 20%;
+    width: 60%;
+    /*background-color: dimgrey;*/
+}
+#progress_bar_now {
+    position: absolute;
+    top: 51%;
+    left:63%;
+    height: 20%;
+    width: 37%;
+    /* background-color: lightgray;*/
+}
+
+/*Стили таблицы KPI*/
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing:10px 10px;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    height: 20%;
+    width:30%;
+    /* background-color: #34C6CD;*/
+}
+.description {
+    display: none;
+}
+td {
+    border: 1px solid black;
+}
+td:nth-child(1) {
+    font-weight: bold ;
+    color: #006064;
+}
+
+/*Стили панели инструментов*/
+.tool {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background:#FFAB00;
+    border-radius: 10px;
+    color: teal;
+    font-weight: bold;
+}
+#tools {
+    position: absolute;
+    top: 42%;
+    left:7%;
+    height:20%;
+    width: 20%;
+    /*background-color: paleturquoise;*/
+}
