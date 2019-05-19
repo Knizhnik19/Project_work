@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite;*/
+}
+
+/*Скрываем фото профиля и верхнюю панель*/
+.header {
+    display: none ;
+}
+#avatar {
+    display: none;
+}
+
+/*Стили кнопок и ссылок меню*/
+.menu_link, .menu{
+    display: block;
+    position: inherit;
+    text-align: center;
+    height: inherit;
+    vertical-align: center;
+    transform: none;
+}
+.menu_link {
+    width: 100%;
+}
+nav {
+    height: 100%;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 7%;
+    background-color: #FFAB00;
+    z-index: 1;
+}
+#menu2 {
+    left: 25%;
+    top: 0;
+}
+#menu3 {
+    left: 50%;
+    top: 0;
+}
+#menu4 {
+    left: 75%;
+    top: 0;
+}
+a:link {
+    color: antiquewhite;
+    font-size: large;
+}
+a:visited {
+    color: mediumvioletred;
+}
+a:active {
+    color: lawngreen;
+}
+
+/*Стили галереи достижений*/
+#gallery {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 20%;
+    width: 62.1%;
+    /* background-color: yellow;*/
+}
+.logo_gallery {
+    width: 20%;
+    display: inline-block;
+}
+#progress_bar_global {
+    position: absolute;
+    top: 8%;
+    left:63%;
+    height: 20%;
+    width: 37%;
+    /*background-color: lightgray;*/
+}
+.progress {
+    height: 10%;
+    width: 90%;
+}
+p {
+    margin: 0;
+}
+#note_global {
+    position: absolute;
+    top: 29%;
+    left:0;
+    height: 10%;
+    width: 100%;
+    font-size: small;
+    /*background-color: dimgrey;*/
+}
+
+/*Стили галереи текущих показателей*/
+#note_now {
+    position: absolute;
+    top: 71%;
+    left:0;
+    height: 10%;
+    width: 100%;
+    font-size: medium;
+    /*background-color: dimgrey;*/
+}
+#progress_bar_now {
+    position: absolute;
+    top: 40%;
+    left:63%;
+    height: 20%;
+    width: 37%;
+    /* background-color: lightgray;*/
+}
+
+/*Стили таблицы KPI*/
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing:10px 10px;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 30%;
+    width:62.1%;
+    /* background-color: #34C6CD;*/
+}
+.description {
+    display: none;
+}
+td {
+    border: 1px solid black;
+}
+td:nth-child(1) {
+    font-weight: bold ;
+    color: #006064;
+}
+
+/*Стили панели инструментов*/
+.tool {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background:#FFAB00;
+    border-radius: 10px;
+    color: teal;
+    font-weight: bold;
+}
+#tools {
+    position: absolute;
+    top: 82%;
+    left:0;
+    height:20%;
+    width: 100%;
+    /*background-color: paleturquoise;*/
+}
