@@ -4,56 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="Style_mob.css" media="(max-width: 640px)">
+    <link rel="stylesheet" href="style_flex.css">
+    <link rel="stylesheet" href="style_less640_flex.css" media="(max-width: 640px)">
 </head>
-<body>
-<div class="header">
+<body class="flex_container">
+<header>
     <p>Шапка</p>
-</div>
-<!-- Фото пользователя -->
-<div id="avatar">
-    <img src="batman.jpg" alt="Фото пользователя" title="Фото пользователя" class="round">
-    <p><input type="file" name="photo"></p>
-</div>
+</header>
 <!--Кнопки меню -->
-<div class="menu">
-    <nav><a href="#" target="_blank" class="menu_link">Профиль</a></nav>
-</div>
-<div class="menu" id="menu2">
-    <nav><a href="#" target="_blank" class="menu_link">Обучение</a></nav>
-</div>
-<div class="menu" id="menu3">
-    <nav><a href="#" target="_blank" class="menu_link">Коммуникации</a></nav>
-</div>
-<div class="menu" id="menu4">
-    <nav><a href="#" target="_blank" class="menu_link">Игра</a></nav>
-</div>
-<!--Галерея достижений-->
-<div id="gallery">
+<nav>
+    <a href="#" target="_blank" class="menu_link">Профиль</a>
+    <a href="#" target="_blank" class="menu_link">Обучение</a>
+    <a href="#" target="_blank" class="menu_link">Коммуникации</a>
+    <a href="#" target="_blank" class="menu_link">Игра</a>
+</nav>
+
+<aside>
+    <!-- Фото пользователя -->
+    <label for="photo">
+        <img src="batman.jpg" alt="Фото пользователя" title="Фото пользователя" class="photo">
+        <input type="file" name="photo"  id="photo">
+    </label>
+    <!--Панель рабочих инструментов-->
+    <div class="tools">
+            <a href="#" class="tool" target="_blank">Tool 1</a>
+            <a href="#" class="tool" target="_blank">Tool 2</a>
+            <a href="#" class="tool" target="_blank">Tool 3</a>
+            <a href="#" class="tool" target="_blank">Tool 4</a>
+            <a href="#" class="tool" target="_blank">Tool 5</a>
+            <a href="#" class="tool" target="_blank">Tool 6</a>
+            <a href="#" class="tool" target="_blank">Tool 7</a>
+            <a href="#" class="tool" target="_blank">Tool 8</a>
+            <a href="#" class="tool" target="_blank">Tool 9</a>
+    </div>
+</aside>
+
+<main>
+    <!--Галерея достижений-->
+    <article class="gallery">
     <img src="star_gray.jpg" alt="сотрудник года" title="Сотрудник года" class="logo_gallery">
     <img src="star_gray.jpg" alt="Отработанное время" class="logo_gallery" title="Максимально отработанное время">
     <img src="star_gray.jpg" alt="Показатель 3" class="logo_gallery" title="Показатель 3">
     <img src="star_gray.jpg" alt="Показатель 4" class="logo_gallery" title="Показатель 4">
     <img src="star_gray.jpg" alt="Показатель 5" class="logo_gallery" title="Показатель 5">
     <img src="star_gray.jpg" alt="Показатель 6" class="logo_gallery" title="Показатель 6">
-</div>
+    </article>
 <!--Пргресс достижений-->
-<div id="progress_bar_global">
+<article class="progress_bar_global">
     <p>Рейтинг1</p>
     <progress max="100" value="25" class="progress"></progress>
     <p>Рейтинг 2</p>
     <progress max="100" value="25" class="progress"></progress>
     <p>Рейтинг 3</p>
     <progress max="100" value="25" class="progress"></progress>
-</div>
+</article>
 <!--Обратная связь по достижениям-->
-<div id="note_global">
+<article class="note_global">
     <p> Результаты работы за год:</p>
     <p>Вася, ты молодец! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae blanditiis consectetur, deserunt dolorum error est eum hic id illo.</p>
-</div>
-<!--Таблица текущих показателей-->
-<table id="kpi_table">
+</article>
+
+    <!--Таблица текущих показателей-->
+<table>
     <tr>
         <td>
             KPI 1
@@ -92,34 +104,20 @@
     </tr>
 </table>
 <!--Прогресс по текущим показателям-->
-<div id="progress_bar_now">
+<article class="progress_bar_now">
     <p>Рейтинг 1</p>
     <progress max="100" value="25" class="progress"></progress>
     <p>Рейтинг 2</p>
     <progress max="100" value="25" class="progress"></progress>
     <p>Рейтинг 3</p>
     <progress max="100" value="25" class="progress"></progress>
-</div>
+</article>
 <!--Обратная связь по текущим показателям-->
-<div id="note_now">
+<article class="note_now">
     <p> Результаты работы за текущий месяц:</p>
     <p>Вася, ты стал опаздывать на работу( Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius fugiat ipsum modi natus qui recusandae similique temporibus?</p>
-</div>
-<!--Панель рабочих инструментов-->
-<div id="tools">
-    <p>
-        <a href="#" class="tool" target="_blank">Tool 1</a>
-        <a href="#" class="tool" target="_blank">Tool 2</a>
-        <a href="#" class="tool" target="_blank">Tool 3</a>
-        <a href="#" class="tool" target="_blank">Tool 4</a>
-        <a href="#" class="tool" target="_blank">Tool 5</a>
-        <a href="#" class="tool" target="_blank">Tool 6</a>
-        <a href="#" class="tool" target="_blank">Tool 7</a>
-        <a href="#" class="tool" target="_blank">Tool 8</a>
-        <a href="#" class="tool" target="_blank">Tool 9</a>
-        <a href="#" class="tool" target="_blank">Tool 10</a>
-        <a href="#" class="tool" target="_blank">Tool 11</a>
-    </p>
-</div>
+</article>
+</main>
+
 </body>
 </html>

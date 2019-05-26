@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    position: relative;
+    min-width: 320px;
+    width: 100vw;
+    height: 90vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #FFAB00;
+}
+aside {
+    width: 25vw;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+label {
+    width: 90%;
+    height: 40%;
+    text-align: center;
+    margin: auto;
+}
+.photo {
+    border-radius: 100%;
+}
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: 40%;
+margin: auto}
+.tool {
+    width: 30%;
+    height: 10%;
+    border-radius: 20%;
+    border: 3px solid #006064;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+.logo_gallery {
+    width: 10%;
+}
+.gallery, .progress_bar_global, .progress_bar_now, table {
+    width: 40%;
+    margin: auto;
+}
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.note_global, .note_now {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 5vw;
+    background-color: cadetblue;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.menu_link {
+    color: azure;
+    text-align: center;
+    transform: rotate(-90deg);
+
+}
+.menu_link:hover {
+    background-color: brown;
+    transform: scale(1.3);
+}

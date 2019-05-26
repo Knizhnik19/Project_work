@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    position: relative;
+    min-width: 320px;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header {
+    display: none;
+}
+aside {
+    order: 3;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+label {
+    display: none;
+}
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+}
+.tool {
+    width: 30%;
+    height: 20%;
+    border-radius: 20%;
+    border: 3px solid #006064;
+    text-align: center;
+}
+
+main {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_gallery {
+    width: 10%;
+}
+.gallery, .progress_bar_global, .progress_bar_now, table {
+    width: 40%;
+    margin: auto;
+}
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.note_global, .note_now {
+    width: 100%;
+}
+nav {
+    order: 1;
+    width: 100vw;
+    height: 10vh;
+    background-color: cadetblue;
+}
+.menu_link {
+    color: azure;
+    text-align: center;
+    transform: rotate(0deg);
+    margin: auto;
+}
+.menu_link:hover {
+    background-color: brown;
+    transform: scale(1.3);
+}
